@@ -1,1 +1,2 @@
 # PolicyFinder
+npm run start
