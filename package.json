@@ -17,12 +17,15 @@
     "path": "^0.12.7",
     "ws": "^8.13.0"
   },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "name": "policyfinder",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
-  },
+    "start": "node app",
+    "dev": "nodemon app"  },
   "author": "",
   "license": "ISC",
   "type": "module",
