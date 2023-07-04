@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/styles/register.css"> 
+    <link rel="stylesheet" href="../static/styles/navbar.css">
+    <script src="../static/scripts/navbar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+    <%
+    const result = [
+    'Andhra Pradesh',
+    'Arunachal Pradesh',
+    'Assam',
+    'Bihar',
+    'Chhattisgarh',
+    'Goa',
+    'Gujarat',
+    'Haryana',
+    'Himachal Pradesh',
+    'Jharkhand',
+    'Karnataka',
+    'Kerala',
+    'Madhya Pradesh',
+    'Maharashtra',
+    'Manipur',
+    'Meghalaya',
+    'Mizoram',
+    'Nagaland',
+    'Odisha',
+    'Punjab',
+    'Rajasthan',
+    'Sikkim',
+    'Tamil Nadu',
+    'Telangana',
+    'Tripura',
+    'Uttar Pradesh',
+    'Uttarakhand',
+    'West Bengal',
+    'Andaman and Nicobar Islands',
+    'Chandigarh',
+    'Dadra and Nagar Haveli and Daman and Diu',
+    'Delhi',
+    'Ladakh',
+    'Lakshadweep',
+    'Puducherry'
+  ];
+%>  
+    <img src="../static/images/bgvector1.png" id="bgimg">
+    <nav class="navbar">
+      <div class="logo">
+          <img src="../static/images/Logo.png">
+          <p1>Policy &nbsp</p1> <p2>Finder</p2>
+      </div>
+      <a href="#" class="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+          <ul>
+              <li><a href="index">Home</a></li>
+              <li><a href="about_us">About Us</a></li>
+              <li><a href="support">Support</a></li>
+              <li><a href="officerlogin">Admin Login</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div class="row">
+    <div class="container">
+      <form method="post"  action="/user/update">
+        <input type="hidden" name="token" value="<%= token %>">
+
+           <div class="input-box">
+          <h4> Name</h4>
+          <input type="text" name="name" value="<%=user.person_name%>" required>
+          <div class="space"></div>
+          <div class="rowRegister">
+            <div class="col1Register">
+                <h4>Age</h4>
+                <input type="number" name="ageNumber" value="<%=user.age%>" required>
+            </div>
+            <div class="col2Register">
+                <h4>Gender</h4>
+                <select name="gender">
+                  <option value="<%=user.gender%>">Male</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+          </div>
+          <h4>Email</h4>
+          <input type="email" name="email" value="<%=user.email%>" required>
+          <div class="space"></div>
+         
+          <h4>Occupation</h4>
+        
+          <% const occupation = ["none","farmer","student","teacher","lawyer","self-employed","government_official"];
+          %>
+
+          <select name="occupation">
+            <% for(var i = 0; i<6; i++){ %>
+                <option value="<%= occupation[i] %>"><%= occupation[i] %></option>
+            <% } %>
+          </select>
+          <div class="space"></div>
+          <h4>Qualification</h4>
+          <select name="qualification">
+            <!-- <% for(var i = 1; i<13 ; i++ ){ 
+                if(i == 1){ %>
+                  <option value="<%= i %>"><%= i%>st</option>
+                <% }else if(i == 2){ %>
+                  <option value="<%= i %>"><%= i%>nd</option>
+                <% }else if(i==3){ %>
+                  <option value="<%= i %>"><%= i%>rd</option>
+                <% }else{ %>
+                  <option value="<%= i %>"><%= i%>th</option>
+                <% }              
+             } %> -->
+             <option value="13">Under-Graduate</option>
+             <option value="14">Graduate</option>
+             <option value="15">Post-Graduate</option>
+             <option value="16">Doctrate</option>
+          </select>
+          <div class="space"></div>
+          <h4>Caste</h4>
+          <select name="caste">
+
+            <option value="gen">General</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="obc">OBC</option>
+          </select>
+          <div class="space"></div>
+          <h4>Family Income</h4>
+          <input type="number" name="income" value="<%=user.income%>" required>
+          <div class="space"></div>
+          <h4>State</h4>
+          <select name="state">
+            <% for(var i = 0; i<result.length; i++){ %>
+              <option value="<%= result[i] %>"><%= result[i] %></option>
+            <% } %>
+          </select>
+          <div class="space"></div>
+          <input type="submit" name="update" id="update" value="update">
+          <div class="space"></div>
+          <div class="space"></div>
+        </div>
+      </form>
+      
+
+    </div>
+  </div>
+  </body>
+</html>
+

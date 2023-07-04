@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/styles/userLogin.css"> 
+    <link rel="stylesheet" href="../static/styles/navbar.css">
+    <script src="../static/scripts/navbar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function temp(){
+        event.preventDefault();
+        window.location.assign("userHome.html");
+      }
+    </script>
+  </head>
+  <body>
+    <img src="../static/images/bgvector1.png" id="bgimg">
+    <nav class="navbar">
+      <div class="logo">
+          <img src="../static/images/Logo.png">
+          <p1>Policy &nbsp</p1> <p2>Finder</p2>
+      </div>
+      <a href="#" class="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="officerlogin.html">Admin Login</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div class="row">
+    <div class="container">
+      <form action="#" onsubmit="temp()">
+        <div class="title"> User Login</div>
+        <h4>Don't have accont?<a href="register.html"> Create new.</a></h4>
+        <div class="input-box">
+          <h4>Mobile Number</h4>
+          <input type="number" placeholder="Enter Your Mobile Number" required>
+          <div class="space"></div>
+          <h4>Password</h4>
+          <input type="password" placeholder="Enter Your Password" required>
+          <div class="space"></div>
+          <input type="submit" name="" value="Login">
+          <h4 id="forgot"><a href="#">Forgot password?</a></h4>
+          <div class="option">Or</div>
+          <div class="mobile">
+          <a href="userLogin.html">Continue with email.</a>
+          </div>
+          <!-- <div class="aadhar">
+          <a href="#">Continue with aadhar number</a>
+          </div> -->
+        </div>
+      </form>
+        <!-- <div class="option"> <u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u>Or<u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></div>
+        <div class="mobile">
+          <a href="#"><i class="fab fa-mobile"></i>Continue with mobile number</a>
+        </div>
+        <div class="aadhar">
+          <a href="#"><i class="fab fa-aadhar-f"></i>Continue with aadhar number</a>
+        </div> -->
+    </div>
+  </div>
+  </body>
+</html>

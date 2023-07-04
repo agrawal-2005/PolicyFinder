@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: SSRegular;
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SSBold;
+    src: url(fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: CRegular;
+    src: url(fonts/Cairo-Regular.ttf);
+}
+
+@font-face {
+    font-family: CSemibold;
+    src: url(fonts/Cairo-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: CBold;
+    src: url(fonts/Cairo-Bold.ttf);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    font-family: SSRegular;
+    font-size: 2.5rem;
+    align-items: center;
+    margin: .1rem;
+}
+
+.logo p1::first-letter{
+    font-family: SSBold;
+    color: #FE904B;
+}
+
+.logo p2::first-letter{
+    font-family: SSBold;
+    color: #FE904B;
+}
+
+.logo img{
+    height: 4rem;
+    width: 4rem;
+    margin: 1.5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: SSRegular;
+    color: #333;
+    padding: 1.5rem;
+    display: block;
+}
+
+.navbar button{
+    margin-top: 1.23rem;
+    margin-right: 1.5rem;
+    height: 2rem;
+    width: 10rem;
+    color: #FB724B;
+    background-color: white;
+    border: 1.33333px solid #FB724B;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+    font-size: 1.2rem;
+}
+
+.navbar button:hover{
+    background-image: linear-gradient(to right, #FB724B,#FE904B);
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links li a:hover{
+    color: #FE904B;
+}
+
+.toggle{
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right, #FB724B,#FE904B);
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px){
+    .toggle{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+        background-image: linear-gradient(to right, #FB724B,#FE904B);
+    }    
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+        color: white;
+    }
+
+    .navbar-links li a:hover{
+        transform-origin: left;
+        transition: all 0.3s ease;
+        background-color: white;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}

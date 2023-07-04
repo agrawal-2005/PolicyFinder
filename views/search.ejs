@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\static\styles\navbar.css">
+        <link rel = "stylesheet" href="..\static/styles/search.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <title>Grievance Portal</title>
+        <script src="../static/scripts/home.js" defer></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="..\static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="userHomeCenter">Home</a></li>
+                    <li><a href="about_us">About Us</a></li>
+                    <li><a href="support">Support</a></li>
+                    <li><a href="index">Logout</a></li>
+                    <li><a href="notification">Notifications</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="outer-col1">
+                <!-- <div class="box1">
+                    <H1>Solutions To All Your Grievances <br> In One Place.</H1>
+                    <p>We will take your grievance to the desk of concerned officer and see it resolved.</p>
+                    <button type="button" class="learnMore">Learn More</button>
+                </div> -->
+                <!-- <a href="userHomeCenter"><div class="box2">Central Policies</div></a>
+                <a href="userHomeState"><div class="box3">State Policies</div></a> -->
+            </div>
+            <div class="container">
+                <div class="title1">Enter Details</div>
+                <form onsubmit="showResults()">
+                    <div class="input-box">
+                        <div class="col1">
+                            <div class="space2"><br><br><br></div>
+                            <h4>Income</h4>
+                            <input type="text" name="income" placeholder="Enter your yearly income" required>
+                            <div class="space"></div>
+                            <h4>Occupation</h4>
+                            <input type="text" name="occupation" placeholder="Enter your occupation" required>
+                            <div class="space"></div>
+                            <h4>Region</h4>
+                            <input type="text" name="region" placeholder="Central/State_name" required>
+                        </div>
+                        <div class="col2">
+                            <h4>Caste</h4>
+                            <input type="text" name="Caste" placeholder="Enter your caste" required>
+                            <div class="innerRow">
+                                <div class="innercol1">
+                                    <h4>Age</h4>
+                                    <input type="number" name="ageNumber" placeholder="Enter Your Age" required>
+                                </div>
+                                <div class="innercol2">
+                                    <h4>Gender</h4>
+                                        <select name="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                </div>
+                            </div>  
+                            <div class="space"></div>
+                            <h4>Policy Category</h4>
+                            <input type="number" name="category" placeholder="Enter Policy Category" required>
+                            <div class="space"></div>
+                            <input type="submit" name="register" id="register" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col3">
+                <h4>RESULTS</h4>
+                <div class="content">
+                    <div class="toprow">
+                        <div class="space"></div>
+                        <p>Policy Name</p>
+                        <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Region</p>
+                        <div class="bigspace2"></div>
+                        <p>Policy Category</p>
+                        <div class="bigspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Visit</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

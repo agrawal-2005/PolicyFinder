@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="../static/styles/register.css"> 
+    <link rel="stylesheet" href="../static/styles/navbar.css">
+    <script src="../static/scripts/navbar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+ 
+  <body>
+    <img src="../static/images/bgvector1.png" id="bgimg">
+    <nav class="navbar">
+      <div class="logo">
+          <img src="../static/images/Logo.png">
+          <p1>Policy &nbsp</p1> <p2>Finder</p2>
+      </div>
+      <a href="#" class="toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+
+      <div class="navbar-links">
+          <ul>
+              <li><a href="index">Home</a></li>
+              <li><a href="about_us">About Us</a></li>
+              <li><a href="support">Support</a></li>
+          </ul>
+      </div>
+  </nav>
+  <div class="row">
+    <div class="container">
+      <form method="get" action="/user/edit" id="myForm">
+        <input type="hidden" name="token" value="<%= token %>">
+        <div class="input-box">
+          <h4> <strong>Name:</strong> <%= user.person_name%></h4>
+          <div class="space"></div>
+          <div class="rowRegister">
+            <div class="col1Register">
+                <h4>Age: <%= user.age%></h4>
+            </div>
+            <div class="col2Register">
+                <h4>Gender : <%= user.gender%></h4>
+                
+            </div>
+          </div>
+          <h4>Email : <%= user.email%></h4>
+          <div class="space"></div>
+          <h4>Occupation: <%= user.occupassion%></h4>
+          <div class="space"></div>
+
+          <h4>Qualification : <%= user.qualification%></h4>
+          <div class="space"></div>
+          <h4>Caste: <%= user.caste%></h4>
+        
+          <div class="space"></div>
+          <h4>Family Income: <%= user.income%></h4>
+          <div class="space"></div>
+          <h4>State: <%=user.state%></h4>
+          <div class="space"></div>
+          <input type="submit" name="submit" id="submit" value="Edit">
+          <div class="space"></div>
+          <div class="space"></div>
+          <!-- <script>
+    
+  
+            // Attach the token as a request header before form submission
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+            //  console.log("token njd  j dm csm cs cs");
+             let token = '<%=token%>' 
+             console.log(token);
+             const work = async () => {
+await sleep(10000);
+//code
+}
+              const form = event.target;
+              
+              const xhr = new XMLHttpRequest();
+          
+              xhr.open(form.method, form.action);
+              xhr.setRequestHeader('Authorization', 'Bearer ' + token); // Add the token as a header
+          
+              xhr.onload = function() {
+                window.location.href = '/user/edit'; // Redirect to the next page
+        
+              };
+            //   window.location.href = '/user/edit'
+          console.log(window.location.href);
+              xhr.send(new FormData(form));
+            }); -->
+          </script>
+      </form>
+      
+
+    </div>
+  </div>
+  </body>
+</html>
+

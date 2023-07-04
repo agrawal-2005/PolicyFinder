@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "alert": "^5.1.4",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1",
+    "mysql2": "^3.2.0",
+    "node-datetime": "^2.1.2",
+    "node-mailer": "^0.1.1",
+    "node-nlp": "^4.27.0",
+    "nodemailer": "^6.9.1",
+    "path": "^0.12.7",
+    "ws": "^8.13.0"
+  },
+  "name": "policyfinder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": ""
+}

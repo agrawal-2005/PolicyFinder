@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/styles/navbar.css">
+        <link rel = "stylesheet" href="../static/styles/notification.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <title>Grievance Portal</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="userHomeCenter?token=<%= token %>">Home</a></li>
+                    <li><a href="about_us?token=<%= token %>">About Us</a></li>
+                    <li><a href="support?token=<%= token %>">Support</a></li>
+                    <li><a href="/index">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+
+            <% 
+                for(var i = 0; i<result.length; i++){
+                            %>
+                           
+                            <div class="col1">
+                                <H1>A new policy have arrived for you.</H1>
+                                <p><%= result[i].policy_name %> <br></p><p><%= result[i].details%></p>
+                                <a href="<%= result[i].policy_link%>"><button type="button" class="learnMore">Visit</button></a>
+                            </div>                            
+                        <% 
+                    } %> 
+
+
+          
+
+            <% 
+                        for(var i = 0; i<result2.length; i++){
+                            %>
+                           
+                            <div class="col1">
+                                <H1>A new policy have arrived for you.</H1>
+                                <p><%= result2[i].policy_name %> <br></p><p><%= result2[i].details%></p>
+                                <a href="<%= result2[i].policy_link%>"><button type="button" class="learnMore">Visit</button></a>
+                            </div>                            
+                        <% 
+                    } %>
+
+          
+            
+        </div>
+    </body>
+</html>

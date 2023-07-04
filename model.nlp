@@ -1,0 +1,2735 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "agnipath,defenc,polici": {
+            "intent": "agnipathdefencepolicy",
+            "domain": "default"
+          },
+          "agnipath,defenc,detail,of,polici": {
+            "intent": "agnipathdefencepolicy",
+            "domain": "default"
+          },
+          "atal,pension,yojna": {
+            "intent": "atal pension yojna",
+            "domain": "default"
+          },
+          "atal,detail,of,pension,yojna": {
+            "intent": "atal pension yojna",
+            "domain": "default"
+          },
+          "ayushman,sahakar,scheme": {
+            "intent": "ayushman sahakar scheme",
+            "domain": "default"
+          },
+          "ayushman,detail,of,sahakar,scheme": {
+            "intent": "ayushman sahakar scheme",
+            "domain": "default"
+          },
+          "bihar,scheme,scholarship": {
+            "intent": "bihar scholarship scheme",
+            "domain": "default"
+          },
+          "bihar,detail,of,scheme,scholarship": {
+            "intent": "bihar scholarship scheme",
+            "domain": "default"
+          },
+          "account,an,creat,how,to": {
+            "intent": "create_account",
+            "domain": "default"
+          },
+          "account,creat": {
+            "intent": "create_account",
+            "domain": "default"
+          },
+          "account,registr": {
+            "intent": "create_account",
+            "domain": "default"
+          },
+          "account,creat,new": {
+            "intent": "create_account",
+            "domain": "default"
+          },
+          "awa,dayal,deen,jan,yojna": {
+            "intent": "deen dayal jan awas yojna",
+            "domain": "default"
+          },
+          "awa,dayal,deen,detail,jan,of,yojna": {
+            "intent": "deen dayal jan awas yojna",
+            "domain": "default"
+          },
+          "and,between,center,differ,polici,state": {
+            "intent": "difference",
+            "domain": "default"
+          },
+          "center,polici,state,vs": {
+            "intent": "difference",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hi,up,what": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "hii": {
+            "intent": "hello",
+            "domain": "default"
+          },
+          "jharkhand,karz,kisan,maafi,yojna": {
+            "intent": "jharkhand kisan karz maafi yojna",
+            "domain": "default"
+          },
+          "detail,jharkhand,karz,kisan,maafi,of,yojna": {
+            "intent": "jharkhand kisan karz maafi yojna",
+            "domain": "default"
+          },
+          "aasha,pm,scheme": {
+            "intent": "pm aasha scheme",
+            "domain": "default"
+          },
+          "aasha,detail,of,pm,scheme": {
+            "intent": "pm aasha scheme",
+            "domain": "default"
+          },
+          "kisan,nidhi,pm,samman": {
+            "intent": "pm kisan samman nidhi",
+            "domain": "default"
+          },
+          "detail,kisan,nidhi,of,pm,samman": {
+            "intent": "pm kisan samman nidhi",
+            "domain": "default"
+          },
+          "nirman,pm,poshan,shakti,yojna": {
+            "intent": "pmposhanshaktinirmanyojna",
+            "domain": "default"
+          },
+          "detail,nirman,of,pm,poshan,shakti,yojna": {
+            "intent": "pmposhanshaktinirmanyojna",
+            "domain": "default"
+          },
+          "detail,get,how,polici,to": {
+            "intent": "policy.details",
+            "domain": "default"
+          },
+          "detail,of,polici": {
+            "intent": "policy.details",
+            "domain": "default"
+          },
+          "about,inform,polici": {
+            "intent": "policy.details",
+            "domain": "default"
+          },
+          "link,polici": {
+            "intent": "policy.details",
+            "domain": "default"
+          },
+          "appli,can,for,how,i,this": {
+            "intent": "policy.ques",
+            "domain": "default"
+          },
+          "appli": {
+            "intent": "policy.ques",
+            "domain": "default"
+          },
+          "regist": {
+            "intent": "policy.ques",
+            "domain": "default"
+          },
+          "can,for,how,i,regist,this": {
+            "intent": "policy.ques",
+            "domain": "default"
+          },
+          "free,rajasthan,tablet,yojna": {
+            "intent": "rajasthan free tablet yojna",
+            "domain": "default"
+          },
+          "detail,free,of,rajasthan,tablet,yojna": {
+            "intent": "rajasthan free tablet yojna",
+            "domain": "default"
+          },
+          "pradesh,rojgar,scheme,uttar": {
+            "intent": "uttar pradesh rojgar scheme",
+            "domain": "default"
+          },
+          "detail,of,pradesh,rojgar,scheme,uttar": {
+            "intent": "uttar pradesh rojgar scheme",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "agnipathdefencepolicy": "default",
+          "atal pension yojna": "default",
+          "ayushman sahakar scheme": "default",
+          "bihar scholarship scheme": "default",
+          "create_account": "default",
+          "deen dayal jan awas yojna": "default",
+          "difference": "default",
+          "greetings.bye": "default",
+          "hello": "default",
+          "jharkhand kisan karz maafi yojna": "default",
+          "pm aasha scheme": "default",
+          "pm kisan samman nidhi": "default",
+          "pmposhanshaktinirmanyojna": "default",
+          "policy.details": "default",
+          "policy.ques": "default",
+          "rajasthan free tablet yojna": "default",
+          "uttar pradesh rojgar scheme": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "agnipath defence policy",
+            "intent": "agnipathdefencepolicy"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of agnipath defence policy",
+            "intent": "agnipathdefencepolicy"
+          },
+          {
+            "domain": "default",
+            "utterance": "atal pension yojna",
+            "intent": "atal pension yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of atal pension yojna",
+            "intent": "atal pension yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "ayushman sahakar scheme",
+            "intent": "ayushman sahakar scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of ayushman sahakar scheme",
+            "intent": "ayushman sahakar scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "bihar scholarship scheme",
+            "intent": "bihar scholarship scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of bihar scholarship scheme",
+            "intent": "bihar scholarship scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "how to create an account",
+            "intent": "create_account"
+          },
+          {
+            "domain": "default",
+            "utterance": "create account",
+            "intent": "create_account"
+          },
+          {
+            "domain": "default",
+            "utterance": "account registration",
+            "intent": "create_account"
+          },
+          {
+            "domain": "default",
+            "utterance": "create new account",
+            "intent": "create_account"
+          },
+          {
+            "domain": "default",
+            "utterance": "deen dayal jan awas yojna",
+            "intent": "deen dayal jan awas yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of deen dayal jan awas yojna",
+            "intent": "deen dayal jan awas yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "difference between state and center policy",
+            "intent": "difference"
+          },
+          {
+            "domain": "default",
+            "utterance": "difference between center and state policy",
+            "intent": "difference"
+          },
+          {
+            "domain": "default",
+            "utterance": "state policy vs center policy",
+            "intent": "difference"
+          },
+          {
+            "domain": "default",
+            "utterance": "center policy vs state policy",
+            "intent": "difference"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi whats up",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hii",
+            "intent": "hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "jharkhand kisan karz maafi yojna",
+            "intent": "jharkhand kisan karz maafi yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of jharkhand kisan karz maafi yojna",
+            "intent": "jharkhand kisan karz maafi yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "pm aasha scheme",
+            "intent": "pm aasha scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of pm aasha scheme",
+            "intent": "pm aasha scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "pm kisan samman nidhi",
+            "intent": "pm kisan samman nidhi"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of pm kisan samman nidhi",
+            "intent": "pm kisan samman nidhi"
+          },
+          {
+            "domain": "default",
+            "utterance": "pm poshan shakti nirman yojna",
+            "intent": "pmposhanshaktinirmanyojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of pm poshan shakti nirman yojna",
+            "intent": "pmposhanshaktinirmanyojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "how to get policy details",
+            "intent": "policy.details"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of policies",
+            "intent": "policy.details"
+          },
+          {
+            "domain": "default",
+            "utterance": "information about policies",
+            "intent": "policy.details"
+          },
+          {
+            "domain": "default",
+            "utterance": "policy link",
+            "intent": "policy.details"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I apply for this",
+            "intent": "policy.ques"
+          },
+          {
+            "domain": "default",
+            "utterance": "apply",
+            "intent": "policy.ques"
+          },
+          {
+            "domain": "default",
+            "utterance": "register",
+            "intent": "policy.ques"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I register for this",
+            "intent": "policy.ques"
+          },
+          {
+            "domain": "default",
+            "utterance": "rajasthan free tablet yojna",
+            "intent": "rajasthan free tablet yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of rajasthan free tablet yojna",
+            "intent": "rajasthan free tablet yojna"
+          },
+          {
+            "domain": "default",
+            "utterance": "uttar pradesh rojgar scheme",
+            "intent": "uttar pradesh rojgar scheme"
+          },
+          {
+            "domain": "default",
+            "utterance": "details of uttar pradesh rojgar scheme",
+            "intent": "uttar pradesh rojgar scheme"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "agnipath": 1,
+              "defenc": 1,
+              "polici": 1,
+              "detail": 1,
+              "of": 1,
+              "atal": 1,
+              "pension": 1,
+              "yojna": 1,
+              "ayushman": 1,
+              "sahakar": 1,
+              "scheme": 1,
+              "bihar": 1,
+              "scholarship": 1,
+              "how": 1,
+              "to": 1,
+              "creat": 1,
+              "an": 1,
+              "account": 1,
+              "registr": 1,
+              "new": 1,
+              "deen": 1,
+              "dayal": 1,
+              "jan": 1,
+              "awa": 1,
+              "differ": 1,
+              "between": 1,
+              "state": 1,
+              "and": 1,
+              "center": 1,
+              "vs": 1,
+              "goodby": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "for": 1,
+              "now": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hi": 1,
+              "hello": 1,
+              "hey": 1,
+              "what": 1,
+              "up": 1,
+              "hii": 1,
+              "jharkhand": 1,
+              "kisan": 1,
+              "karz": 1,
+              "maafi": 1,
+              "pm": 1,
+              "aasha": 1,
+              "samman": 1,
+              "nidhi": 1,
+              "poshan": 1,
+              "shakti": 1,
+              "nirman": 1,
+              "get": 1,
+              "inform": 1,
+              "about": 1,
+              "link": 1,
+              "can": 1,
+              "appli": 1,
+              "this": 1,
+              "regist": 1,
+              "rajasthan": 1,
+              "free": 1,
+              "tablet": 1,
+              "uttar": 1,
+              "pradesh": 1,
+              "rojgar": 1
+            },
+            "intents": {
+              "agnipathdefencepolicy": 1,
+              "atal pension yojna": 1,
+              "ayushman sahakar scheme": 1,
+              "bihar scholarship scheme": 1,
+              "create_account": 1,
+              "deen dayal jan awas yojna": 1,
+              "difference": 1,
+              "greetings.bye": 1,
+              "hello": 1,
+              "jharkhand kisan karz maafi yojna": 1,
+              "pm aasha scheme": 1,
+              "pm kisan samman nidhi": 1,
+              "pmposhanshaktinirmanyojna": 1,
+              "policy.details": 1,
+              "policy.ques": 1,
+              "rajasthan free tablet yojna": 1,
+              "uttar pradesh rojgar scheme": 1
+            },
+            "intentFeatures": {
+              "agnipathdefencepolicy": {
+                "agnipath": 1,
+                "defenc": 1,
+                "polici": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "atal pension yojna": {
+                "atal": 1,
+                "pension": 1,
+                "yojna": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "ayushman sahakar scheme": {
+                "ayushman": 1,
+                "sahakar": 1,
+                "scheme": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "bihar scholarship scheme": {
+                "bihar": 1,
+                "scholarship": 1,
+                "scheme": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "create_account": {
+                "how": 1,
+                "to": 1,
+                "creat": 1,
+                "an": 1,
+                "account": 1,
+                "registr": 1,
+                "new": 1
+              },
+              "deen dayal jan awas yojna": {
+                "deen": 1,
+                "dayal": 1,
+                "jan": 1,
+                "awa": 1,
+                "yojna": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "difference": {
+                "differ": 1,
+                "between": 1,
+                "state": 1,
+                "and": 1,
+                "center": 1,
+                "polici": 1,
+                "vs": 1
+              },
+              "greetings.bye": {
+                "goodby": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "for": 1,
+                "now": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "hello": {
+                "hi": 1,
+                "hello": 1,
+                "hey": 1,
+                "what": 1,
+                "up": 1,
+                "hii": 1
+              },
+              "jharkhand kisan karz maafi yojna": {
+                "jharkhand": 1,
+                "kisan": 1,
+                "karz": 1,
+                "maafi": 1,
+                "yojna": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "pm aasha scheme": {
+                "pm": 1,
+                "aasha": 1,
+                "scheme": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "pm kisan samman nidhi": {
+                "pm": 1,
+                "kisan": 1,
+                "samman": 1,
+                "nidhi": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "pmposhanshaktinirmanyojna": {
+                "pm": 1,
+                "poshan": 1,
+                "shakti": 1,
+                "nirman": 1,
+                "yojna": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "policy.details": {
+                "how": 1,
+                "to": 1,
+                "get": 1,
+                "polici": 1,
+                "detail": 1,
+                "of": 1,
+                "inform": 1,
+                "about": 1,
+                "link": 1
+              },
+              "policy.ques": {
+                "how": 1,
+                "can": 1,
+                "i": 1,
+                "appli": 1,
+                "for": 1,
+                "this": 1,
+                "regist": 1
+              },
+              "rajasthan free tablet yojna": {
+                "rajasthan": 1,
+                "free": 1,
+                "tablet": 1,
+                "yojna": 1,
+                "detail": 1,
+                "of": 1
+              },
+              "uttar pradesh rojgar scheme": {
+                "uttar": 1,
+                "pradesh": 1,
+                "rojgar": 1,
+                "scheme": 1,
+                "detail": 1,
+                "of": 1
+              }
+            },
+            "featuresToIntent": {
+              "agnipath": [
+                "agnipathdefencepolicy"
+              ],
+              "defenc": [
+                "agnipathdefencepolicy"
+              ],
+              "polici": [
+                "agnipathdefencepolicy",
+                "difference",
+                "policy.details"
+              ],
+              "detail": [
+                "agnipathdefencepolicy",
+                "atal pension yojna",
+                "ayushman sahakar scheme",
+                "bihar scholarship scheme",
+                "deen dayal jan awas yojna",
+                "jharkhand kisan karz maafi yojna",
+                "pm aasha scheme",
+                "pm kisan samman nidhi",
+                "pmposhanshaktinirmanyojna",
+                "policy.details",
+                "rajasthan free tablet yojna",
+                "uttar pradesh rojgar scheme"
+              ],
+              "of": [
+                "agnipathdefencepolicy",
+                "atal pension yojna",
+                "ayushman sahakar scheme",
+                "bihar scholarship scheme",
+                "deen dayal jan awas yojna",
+                "jharkhand kisan karz maafi yojna",
+                "pm aasha scheme",
+                "pm kisan samman nidhi",
+                "pmposhanshaktinirmanyojna",
+                "policy.details",
+                "rajasthan free tablet yojna",
+                "uttar pradesh rojgar scheme"
+              ],
+              "atal": [
+                "atal pension yojna"
+              ],
+              "pension": [
+                "atal pension yojna"
+              ],
+              "yojna": [
+                "atal pension yojna",
+                "deen dayal jan awas yojna",
+                "jharkhand kisan karz maafi yojna",
+                "pmposhanshaktinirmanyojna",
+                "rajasthan free tablet yojna"
+              ],
+              "ayushman": [
+                "ayushman sahakar scheme"
+              ],
+              "sahakar": [
+                "ayushman sahakar scheme"
+              ],
+              "scheme": [
+                "ayushman sahakar scheme",
+                "bihar scholarship scheme",
+                "pm aasha scheme",
+                "uttar pradesh rojgar scheme"
+              ],
+              "bihar": [
+                "bihar scholarship scheme"
+              ],
+              "scholarship": [
+                "bihar scholarship scheme"
+              ],
+              "how": [
+                "create_account",
+                "policy.details",
+                "policy.ques"
+              ],
+              "to": [
+                "create_account",
+                "policy.details"
+              ],
+              "creat": [
+                "create_account"
+              ],
+              "an": [
+                "create_account"
+              ],
+              "account": [
+                "create_account"
+              ],
+              "registr": [
+                "create_account"
+              ],
+              "new": [
+                "create_account"
+              ],
+              "deen": [
+                "deen dayal jan awas yojna"
+              ],
+              "dayal": [
+                "deen dayal jan awas yojna"
+              ],
+              "jan": [
+                "deen dayal jan awas yojna"
+              ],
+              "awa": [
+                "deen dayal jan awas yojna"
+              ],
+              "differ": [
+                "difference"
+              ],
+              "between": [
+                "difference"
+              ],
+              "state": [
+                "difference"
+              ],
+              "and": [
+                "difference"
+              ],
+              "center": [
+                "difference"
+              ],
+              "vs": [
+                "difference"
+              ],
+              "goodby": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye",
+                "policy.ques"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye",
+                "policy.ques"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hi": [
+                "hello"
+              ],
+              "hello": [
+                "hello"
+              ],
+              "hey": [
+                "hello"
+              ],
+              "what": [
+                "hello"
+              ],
+              "up": [
+                "hello"
+              ],
+              "hii": [
+                "hello"
+              ],
+              "jharkhand": [
+                "jharkhand kisan karz maafi yojna"
+              ],
+              "kisan": [
+                "jharkhand kisan karz maafi yojna",
+                "pm kisan samman nidhi"
+              ],
+              "karz": [
+                "jharkhand kisan karz maafi yojna"
+              ],
+              "maafi": [
+                "jharkhand kisan karz maafi yojna"
+              ],
+              "pm": [
+                "pm aasha scheme",
+                "pm kisan samman nidhi",
+                "pmposhanshaktinirmanyojna"
+              ],
+              "aasha": [
+                "pm aasha scheme"
+              ],
+              "samman": [
+                "pm kisan samman nidhi"
+              ],
+              "nidhi": [
+                "pm kisan samman nidhi"
+              ],
+              "poshan": [
+                "pmposhanshaktinirmanyojna"
+              ],
+              "shakti": [
+                "pmposhanshaktinirmanyojna"
+              ],
+              "nirman": [
+                "pmposhanshaktinirmanyojna"
+              ],
+              "get": [
+                "policy.details"
+              ],
+              "inform": [
+                "policy.details"
+              ],
+              "about": [
+                "policy.details"
+              ],
+              "link": [
+                "policy.details"
+              ],
+              "can": [
+                "policy.ques"
+              ],
+              "appli": [
+                "policy.ques"
+              ],
+              "this": [
+                "policy.ques"
+              ],
+              "regist": [
+                "policy.ques"
+              ],
+              "rajasthan": [
+                "rajasthan free tablet yojna"
+              ],
+              "free": [
+                "rajasthan free tablet yojna"
+              ],
+              "tablet": [
+                "rajasthan free tablet yojna"
+              ],
+              "uttar": [
+                "uttar pradesh rojgar scheme"
+              ],
+              "pradesh": [
+                "uttar pradesh rojgar scheme"
+              ],
+              "rojgar": [
+                "uttar pradesh rojgar scheme"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "agnipath",
+                "defenc",
+                "polici",
+                "detail",
+                "of",
+                "atal",
+                "pension",
+                "yojna",
+                "ayushman",
+                "sahakar",
+                "scheme",
+                "bihar",
+                "scholarship",
+                "how",
+                "to",
+                "creat",
+                "an",
+                "account",
+                "registr",
+                "new",
+                "deen",
+                "dayal",
+                "jan",
+                "awa",
+                "differ",
+                "between",
+                "state",
+                "and",
+                "center",
+                "vs",
+                "goodby",
+                "bye",
+                "take",
+                "care",
+                "see",
+                "you",
+                "later",
+                "for",
+                "now",
+                "i",
+                "must",
+                "go",
+                "hi",
+                "hello",
+                "hey",
+                "what",
+                "up",
+                "hii",
+                "jharkhand",
+                "kisan",
+                "karz",
+                "maafi",
+                "pm",
+                "aasha",
+                "samman",
+                "nidhi",
+                "poshan",
+                "shakti",
+                "nirman",
+                "get",
+                "inform",
+                "about",
+                "link",
+                "can",
+                "appli",
+                "this",
+                "regist",
+                "rajasthan",
+                "free",
+                "tablet",
+                "uttar",
+                "pradesh",
+                "rojgar"
+              ],
+              "intents": [
+                "agnipathdefencepolicy",
+                "atal pension yojna",
+                "ayushman sahakar scheme",
+                "bihar scholarship scheme",
+                "create_account",
+                "deen dayal jan awas yojna",
+                "difference",
+                "greetings.bye",
+                "hello",
+                "jharkhand kisan karz maafi yojna",
+                "pm aasha scheme",
+                "pm kisan samman nidhi",
+                "pmposhanshaktinirmanyojna",
+                "policy.details",
+                "policy.ques",
+                "rajasthan free tablet yojna",
+                "uttar pradesh rojgar scheme"
+              ],
+              "perceptrons": [
+                [
+                  6.897890567779541,
+                  6.897890567779541,
+                  1.2067170143127441,
+                  -0.5694667100906372,
+                  0.07230575382709503,
+                  -0.25553247332572937,
+                  -0.25553247332572937,
+                  -0.6940872073173523,
+                  -0.28940245509147644,
+                  -0.28940245509147644,
+                  -0.7602938413619995,
+                  -0.2543739676475525,
+                  -0.2543739676475525,
+                  -0.5993527173995972,
+                  -0.5993527173995972,
+                  -0.1262560486793518,
+                  -0.030314238741993904,
+                  -0.1887679547071457,
+                  -0.04669544845819473,
+                  -0.022515082731842995,
+                  -0.19617904722690582,
+                  -0.19617904722690582,
+                  -0.19617904722690582,
+                  -0.19617904722690582,
+                  -0.38688012957572937,
+                  -0.38688012957572937,
+                  -0.9267042875289917,
+                  -0.38688012957572937,
+                  -0.9267042875289917,
+                  -0.49724406003952026,
+                  -0.034837692975997925,
+                  -0.05882180482149124,
+                  -0.027629103511571884,
+                  -0.027629103511571884,
+                  -0.02889375202357769,
+                  -0.02889375202357769,
+                  -0.02889375202357769,
+                  -0.02386368252336979,
+                  -0.02386368252336979,
+                  -0.02708025462925434,
+                  -0.02708025462925434,
+                  -0.02708025462925434,
+                  -0.05444762483239174,
+                  -0.02815675362944603,
+                  -0.02704155631363392,
+                  -0.019574252888560295,
+                  -0.019574252888560295,
+                  -0.025202415883541107,
+                  -0.11491112411022186,
+                  -0.2742966413497925,
+                  -0.11491112411022186,
+                  -0.11491112411022186,
+                  -0.3085653483867645,
+                  -0.0950031504034996,
+                  -0.12694142758846283,
+                  -0.12694142758846283,
+                  -0.02913030795753002,
+                  -0.02913030795753002,
+                  -0.02913030795753002,
+                  -0.5519129037857056,
+                  -0.6753461956977844,
+                  -0.6753461956977844,
+                  -0.9845336079597473,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4957316941242892
+                ],
+                [
+                  -0.023045403882861137,
+                  -0.023045403882861137,
+                  -0.31991448998451233,
+                  0.007788711693137884,
+                  0.02702057734131813,
+                  5.803200721740723,
+                  5.803200721740723,
+                  2.56410813331604,
+                  -0.26079174876213074,
+                  -0.26079174876213074,
+                  -0.6950588226318359,
+                  -0.26999664306640625,
+                  -0.26999664306640625,
+                  -0.07932797819375992,
+                  -0.07932797819375992,
+                  -0.16399821639060974,
+                  -0.04271383583545685,
+                  -0.2424810528755188,
+                  -0.058808084577322006,
+                  -0.02712421864271164,
+                  -0.7546263933181763,
+                  -0.7546263933181763,
+                  -0.7546263933181763,
+                  -0.7546263933181763,
+                  -0.04145374149084091,
+                  -0.04145374149084091,
+                  -0.08538159728050232,
+                  -0.04145374149084091,
+                  -0.08538159728050232,
+                  -0.0348251536488533,
+                  -0.11356884241104126,
+                  -0.11808499693870544,
+                  -0.05567485839128494,
+                  -0.05567485839128494,
+                  -0.06725258380174637,
+                  -0.06725258380174637,
+                  -0.06725258380174637,
+                  -0.04817032441496849,
+                  -0.04817032441496849,
+                  -0.06374514847993851,
+                  -0.06374514847993851,
+                  -0.06374514847993851,
+                  -0.12911538779735565,
+                  -0.10357540100812912,
+                  -0.10165686160326004,
+                  -0.03951204940676689,
+                  -0.03951204940676689,
+                  -0.09882516413927078,
+                  -0.7321163415908813,
+                  -0.8032248020172119,
+                  -0.7321163415908813,
+                  -0.7321163415908813,
+                  -0.8520820736885071,
+                  -0.0654255673289299,
+                  -0.04839261248707771,
+                  -0.04839261248707771,
+                  -0.6923657059669495,
+                  -0.6923657059669495,
+                  -0.6923657059669495,
+                  -0.014500359073281288,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.08924560248851776,
+                  0,
+                  -0.08849786221981049,
+                  -0.935271680355072,
+                  -0.935271680355072,
+                  -0.935271680355072,
+                  0,
+                  0,
+                  0,
+                  0.09232496089575622
+                ],
+                [
+                  -0.02391970530152321,
+                  -0.02391970530152321,
+                  -0.34613630175590515,
+                  -0.004452863708138466,
+                  0.03199082985520363,
+                  0,
+                  0,
+                  -0.5374197363853455,
+                  5.878872394561768,
+                  5.878872394561768,
+                  2.4178261756896973,
+                  -1.3274070024490356,
+                  -1.3274070024490356,
+                  -0.08453357219696045,
+                  -0.08453357219696045,
+                  -0.1431475281715393,
+                  -0.03868851438164711,
+                  -0.209223672747612,
+                  -0.051458656787872314,
+                  -0.025100331753492355,
+                  -0.18863268196582794,
+                  -0.18863268196582794,
+                  -0.18863268196582794,
+                  -0.18863268196582794,
+                  -0.039554204791784286,
+                  -0.039554204791784286,
+                  -0.08474147319793701,
+                  -0.039554204791784286,
+                  -0.08474147319793701,
+                  -0.034416668117046356,
+                  -0.1153896152973175,
+                  -0.12026515603065491,
+                  -0.057697881013154984,
+                  -0.057697881013154984,
+                  -0.06145283579826355,
+                  -0.06145283579826355,
+                  -0.06145283579826355,
+                  -0.0499277301132679,
+                  -0.0499277301132679,
+                  -0.06431875377893448,
+                  -0.06431875377893448,
+                  -0.06431875377893448,
+                  -0.13008642196655273,
+                  -0.1059311181306839,
+                  -0.10398934781551361,
+                  -0.04102705791592598,
+                  -0.04102705791592598,
+                  -0.10129263252019882,
+                  -0.13907746970653534,
+                  -0.25606533885002136,
+                  -0.13907746970653534,
+                  -0.13907746970653534,
+                  -1.3711267709732056,
+                  -1.2447024583816528,
+                  -0.06496035307645798,
+                  -0.06496035307645798,
+                  -0.018181877210736275,
+                  -0.018181877210736275,
+                  -0.018181877210736275,
+                  -0.02917303889989853,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.08922430872917175,
+                  0,
+                  -0.08846255391836166,
+                  -0.03478633239865303,
+                  -0.03478633239865303,
+                  -0.03478633239865303,
+                  -0.8751131892204285,
+                  -0.8751131892204285,
+                  -0.8751131892204285,
+                  0.09197443479689761
+                ],
+                [
+                  -0.0334935262799263,
+                  -0.0334935262799263,
+                  -0.4094058573246002,
+                  -0.018587438389658928,
+                  0.0336667075753212,
+                  0,
+                  0,
+                  -0.6084824204444885,
+                  -1.2765766382217407,
+                  -1.2765766382217407,
+                  2.4671692848205566,
+                  5.882806777954102,
+                  5.882806777954102,
+                  -0.10336410254240036,
+                  -0.10336410254240036,
+                  -0.17357222735881805,
+                  -0.04996344819664955,
+                  -0.2600223422050476,
+                  -0.06317424029111862,
+                  -0.03262719139456749,
+                  -0.1782609522342682,
+                  -0.1782609522342682,
+                  -0.1782609522342682,
+                  -0.1782609522342682,
+                  -0.055034246295690536,
+                  -0.055034246295690536,
+                  -0.11368658393621445,
+                  -0.055034246295690536,
+                  -0.11368658393621445,
+                  -0.0450579859316349,
+                  -0.09981226176023483,
+                  -0.13338735699653625,
+                  -0.06104867905378342,
+                  -0.06104867905378342,
+                  -0.06243925541639328,
+                  -0.06243925541639328,
+                  -0.06243925541639328,
+                  -0.05269990488886833,
+                  -0.05269990488886833,
+                  -0.058240510523319244,
+                  -0.058240510523319244,
+                  -0.058240510523319244,
+                  -0.12928390502929688,
+                  -0.082899309694767,
+                  -0.07984679937362671,
+                  -0.04310116916894913,
+                  -0.04310116916894913,
+                  -0.074999138712883,
+                  -0.15777996182441711,
+                  -0.31601810455322266,
+                  -0.15777996182441711,
+                  -0.15777996182441711,
+                  -1.410723328590393,
+                  -1.20601224899292,
+                  -0.09727869927883148,
+                  -0.09727869927883148,
+                  -0.03285196051001549,
+                  -0.03285196051001549,
+                  -0.03285196051001549,
+                  -0.03430863469839096,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.041850898414850235,
+                  0,
+                  -0.04155723750591278,
+                  -0.06693045794963837,
+                  -0.06693045794963837,
+                  -0.06693045794963837,
+                  -0.9049131870269775,
+                  -0.9049131870269775,
+                  -0.9049131870269775,
+                  0.04304659613575352
+                ],
+                [
+                  -0.014772405847907066,
+                  -0.014772405847907066,
+                  -0.9450599551200867,
+                  -0.5269984602928162,
+                  -0.19963115453720093,
+                  -0.060023583471775055,
+                  -0.060023583471775055,
+                  -0.6211416721343994,
+                  -0.10479748249053955,
+                  -0.10479748249053955,
+                  -0.5285367965698242,
+                  -0.09444042295217514,
+                  -0.09444042295217514,
+                  -0.18613874912261963,
+                  0.05844498053193092,
+                  4.381749629974365,
+                  0.4412994682788849,
+                  9.007486343383789,
+                  4.620185375213623,
+                  0.4470180571079254,
+                  -0.2708010673522949,
+                  -0.2708010673522949,
+                  -0.2708010673522949,
+                  -0.2708010673522949,
+                  -0.22074007987976074,
+                  -0.22074007987976074,
+                  -0.42303523421287537,
+                  -0.22074007987976074,
+                  -0.42303523421287537,
+                  -0.1687164157629013,
+                  -0.625750720500946,
+                  -0.4860687553882599,
+                  -0.2560436427593231,
+                  -0.2560436427593231,
+                  -0.30309268832206726,
+                  -0.30309268832206726,
+                  -0.30309268832206726,
+                  -0.44460785388946533,
+                  -0.16942532360553741,
+                  -0.49223917722702026,
+                  -0.22727110981941223,
+                  -0.22727110981941223,
+                  -0.6471649408340454,
+                  -0.6168341636657715,
+                  -0.6132283210754395,
+                  -0.18318189680576324,
+                  -0.18318189680576324,
+                  -0.6086982488632202,
+                  -0.09495724737644196,
+                  -0.2583498954772949,
+                  -0.09495724737644196,
+                  -0.09495724737644196,
+                  -0.3825415372848511,
+                  -0.1751488745212555,
+                  -0.13176074624061584,
+                  -0.13176074624061584,
+                  -0.031524334102869034,
+                  -0.031524334102869034,
+                  -0.031524334102869034,
+                  -0.3170018494129181,
+                  -0.05529998987913132,
+                  -0.05529998987913132,
+                  -0.049101322889328,
+                  -0.22234487533569336,
+                  -0.6117631196975708,
+                  -0.22234487533569336,
+                  -0.6031624674797058,
+                  -0.0604008212685585,
+                  -0.0604008212685585,
+                  -0.0604008212685585,
+                  -0.09873156994581223,
+                  -0.09873156994581223,
+                  -0.09873156994581223,
+                  0.6216234183695339
+                ],
+                [
+                  -0.015655338764190674,
+                  -0.015655338764190674,
+                  -0.3640629053115845,
+                  -0.03783949092030525,
+                  0.021302660927176476,
+                  -0.5520263314247131,
+                  -0.5520263314247131,
+                  1.1716867685317993,
+                  -0.00035427644615992904,
+                  -0.00035427644615992904,
+                  -0.25206735730171204,
+                  0,
+                  0,
+                  -0.039747919887304306,
+                  -0.039747919887304306,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3.323864459991455,
+                  3.323864459991455,
+                  3.323864459991455,
+                  3.323864459991455,
+                  -0.05839387699961662,
+                  -0.05839387699961662,
+                  -0.11977130174636841,
+                  -0.05839387699961662,
+                  -0.11977130174636841,
+                  -0.0374322310090065,
+                  -0.07112676650285721,
+                  -0.11241281032562256,
+                  -0.04898165166378021,
+                  -0.04898165166378021,
+                  -0.04833606630563736,
+                  -0.04833606630563736,
+                  -0.04833606630563736,
+                  -0.04243265092372894,
+                  -0.04243265092372894,
+                  -0.04474538564682007,
+                  -0.04474538564682007,
+                  -0.04474538564682007,
+                  -0.09659542143344879,
+                  -0.0567576140165329,
+                  -0.0544988252222538,
+                  -0.03447916358709335,
+                  -0.03447916358709335,
+                  -0.05059342831373215,
+                  -0.45544183254241943,
+                  -0.6230345368385315,
+                  -0.45544183254241943,
+                  -0.45544183254241943,
+                  -0.7807592749595642,
+                  -0.15354479849338531,
+                  -0.10193192213773727,
+                  -0.10193192213773727,
+                  -0.41551297903060913,
+                  -0.41551297903060913,
+                  -0.41551297903060913,
+                  -0.039747919887304306,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.004755315836519003,
+                  0,
+                  -0.004559158347547054,
+                  -0.48672255873680115,
+                  -0.48672255873680115,
+                  -0.48672255873680115,
+                  -0.042273085564374924,
+                  -0.042273085564374924,
+                  -0.042273085564374924,
+                  -0.1709732412321391
+                ],
+                [
+                  -0.6439865827560425,
+                  -0.6439865827560425,
+                  1.3956894874572754,
+                  -1.1115494966506958,
+                  -0.649042010307312,
+                  0,
+                  0,
+                  -0.18476752936840057,
+                  0,
+                  0,
+                  -0.134151428937912,
+                  0,
+                  0,
+                  -0.3824313282966614,
+                  -0.3629930317401886,
+                  -0.009124443866312504,
+                  0,
+                  -0.01563464105129242,
+                  -0.0036721110809594393,
+                  -0.0031122618820518255,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1.1972770690917969,
+                  1.1972770690917969,
+                  4.787717342376709,
+                  1.1972770690917969,
+                  4.787717342376709,
+                  3.5904133319854736,
+                  -0.14942896366119385,
+                  -0.24199746549129486,
+                  -0.10676313191652298,
+                  -0.10676313191652298,
+                  -0.10600418597459793,
+                  -0.10600418597459793,
+                  -0.10600418597459793,
+                  -0.10800500959157944,
+                  -0.09107314795255661,
+                  -0.11411446332931519,
+                  -0.09710567444562912,
+                  -0.09710567444562912,
+                  -0.21074257791042328,
+                  -0.11948195099830627,
+                  -0.11475927382707596,
+                  -0.07516337186098099,
+                  -0.07516337186098099,
+                  -0.10660842061042786,
+                  -0.09070391207933426,
+                  -0.18265753984451294,
+                  -0.09070391207933426,
+                  -0.09070391207933426,
+                  -0.25754934549331665,
+                  -0.11156268417835236,
+                  -0.054183851927518845,
+                  -0.054183851927518845,
+                  -0.037989888340234756,
+                  -0.037989888340234756,
+                  -0.037989888340234756,
+                  -0.3629930317401886,
+                  -0.6768463850021362,
+                  -0.6768463850021362,
+                  -1.1134092807769775,
+                  -0.0026612684596329927,
+                  -0.02626609243452549,
+                  -0.0026612684596329927,
+                  -0.021053185686469078,
+                  -0.003912503365427256,
+                  -0.003912503365427256,
+                  -0.003912503365427256,
+                  -0.007180894259363413,
+                  -0.007180894259363413,
+                  -0.007180894259363413,
+                  -0.27714656158138307
+                ],
+                [
+                  -0.2839966118335724,
+                  -0.2839966118335724,
+                  -1.859460711479187,
+                  -0.6418207883834839,
+                  -0.48201805353164673,
+                  -0.4252930283546448,
+                  -0.4252930283546448,
+                  -1.5670273303985596,
+                  -0.4021473228931427,
+                  -0.4021473228931427,
+                  -1.614949107170105,
+                  -0.40112438797950745,
+                  -0.40112438797950745,
+                  -1.843614101409912,
+                  -0.18100406229496002,
+                  -0.839945912361145,
+                  -0.03632316738367081,
+                  -1.6249308586120605,
+                  -0.7811777591705322,
+                  -0.2437012493610382,
+                  -0.2131611853837967,
+                  -0.2131611853837967,
+                  -0.2131611853837967,
+                  -0.2131611853837967,
+                  -0.07036910206079483,
+                  -0.07036910206079483,
+                  -0.2130851149559021,
+                  -0.07036910206079483,
+                  -0.2130851149559021,
+                  -0.13450194895267487,
+                  11.113875389099121,
+                  6.32131290435791,
+                  2.7549638748168945,
+                  2.7549638748168945,
+                  3.9416823387145996,
+                  3.9416823387145996,
+                  3.9416823387145996,
+                  1.936262845993042,
+                  3.566014528274536,
+                  2.854962110519409,
+                  4.484715461730957,
+                  4.484715461730957,
+                  -2.393348455429077,
+                  -2.336812973022461,
+                  -2.317411422729492,
+                  -0.5380335450172424,
+                  -0.5380335450172424,
+                  -2.2954118251800537,
+                  -0.3289896249771118,
+                  -0.757104218006134,
+                  -0.3289896249771118,
+                  -0.3289896249771118,
+                  -1.0438811779022217,
+                  -0.43344035744667053,
+                  -0.3642354905605316,
+                  -0.3642354905605316,
+                  -0.1625554859638214,
+                  -0.1625554859638214,
+                  -0.1625554859638214,
+                  -0.10572031885385513,
+                  -0.39880725741386414,
+                  -0.39880725741386414,
+                  -0.5735707879066467,
+                  -1.6287853717803955,
+                  -2.330794334411621,
+                  -1.6287853717803955,
+                  -2.3007876873016357,
+                  -0.31342342495918274,
+                  -0.31342342495918274,
+                  -0.31342342495918274,
+                  -0.31931522488594055,
+                  -0.31931522488594055,
+                  -0.31931522488594055,
+                  2.4247818478372927
+                ],
+                [
+                  -0.5435070991516113,
+                  -0.5435070991516113,
+                  -3.254406690597534,
+                  -0.9080038666725159,
+                  -0.6603274345397949,
+                  -0.8434261679649353,
+                  -0.8434261679649353,
+                  -2.646153211593628,
+                  -0.786481499671936,
+                  -0.786481499671936,
+                  -2.7632439136505127,
+                  -0.7836834788322449,
+                  -0.7836834788322449,
+                  -0.8345813751220703,
+                  -0.39738065004348755,
+                  -1.4712913036346436,
+                  -0.15133923292160034,
+                  -2.8794004917144775,
+                  -1.405249834060669,
+                  -0.35112470388412476,
+                  -0.42311856150627136,
+                  -0.42311856150627136,
+                  -0.42311856150627136,
+                  -0.42311856150627136,
+                  -0.11563178151845932,
+                  -0.11563178151845932,
+                  -0.40318113565444946,
+                  -0.11563178151845932,
+                  -0.40318113565444946,
+                  -0.27958711981773376,
+                  -3.811048984527588,
+                  -2.041579484939575,
+                  -1.1298962831497192,
+                  -1.1298962831497192,
+                  -1.4279741048812866,
+                  -1.4279741048812866,
+                  -1.4279741048812866,
+                  -1.3380348682403564,
+                  -0.9086017608642578,
+                  -1.7126678228378296,
+                  -1.283234715461731,
+                  -1.283234715461731,
+                  9.001866340637207,
+                  9.57805347442627,
+                  9.505036354064941,
+                  0.6258614659309387,
+                  0.6258614659309387,
+                  9.450963973999023,
+                  -0.47852009534835815,
+                  -1.2567565441131592,
+                  -0.47852009534835815,
+                  -0.47852009534835815,
+                  -1.6716846227645874,
+                  -0.6221559643745422,
+                  -0.729669451713562,
+                  -0.729669451713562,
+                  -0.24839991331100464,
+                  -0.24839991331100464,
+                  -0.24839991331100464,
+                  -0.19474555552005768,
+                  -0.6459161043167114,
+                  -0.6459161043167114,
+                  -1.1234586238861084,
+                  -0.3944430649280548,
+                  -4.01136589050293,
+                  -0.3944430649280548,
+                  -3.9597508907318115,
+                  -0.5678626298904419,
+                  -0.5678626298904419,
+                  -0.5678626298904419,
+                  -0.5293816328048706,
+                  -0.5293816328048706,
+                  -0.5293816328048706,
+                  4.354282259266241
+                ],
+                [
+                  -0.0284247025847435,
+                  -0.0284247025847435,
+                  -0.32670146226882935,
+                  -0.06508653610944748,
+                  0.04184691235423088,
+                  -0.6608079075813293,
+                  -0.6608079075813293,
+                  1.351945161819458,
+                  -0.0008249294478446245,
+                  -0.0008249294478446245,
+                  -0.2770983874797821,
+                  0,
+                  0,
+                  -0.12565384805202484,
+                  -0.07351122796535492,
+                  -0.0018671980360522866,
+                  0,
+                  -0.0031993777956813574,
+                  -0.0007514440803788602,
+                  -0.0006371166673488915,
+                  -0.3512224555015564,
+                  -0.3512224555015564,
+                  -0.3512224555015564,
+                  -0.3512224555015564,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.022836308926343918,
+                  0,
+                  -0.022836308926343918,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3.4405598640441895,
+                  2.701068878173828,
+                  3.4405598640441895,
+                  3.4405598640441895,
+                  -1.35468590259552,
+                  -0.16828219592571259,
+                  -0.7160351276397705,
+                  -0.7160351276397705,
+                  -0.31459367275238037,
+                  -0.31459367275238037,
+                  -0.31459367275238037,
+                  -0.07351122796535492,
+                  -0.0014122466091066599,
+                  -0.0014122466091066599,
+                  0,
+                  -0.022836308926343918,
+                  -0.05126090720295906,
+                  -0.022836308926343918,
+                  -0.04206568002700806,
+                  -0.5541890263557434,
+                  -0.5541890263557434,
+                  -0.5541890263557434,
+                  -0.05167734995484352,
+                  -0.05167734995484352,
+                  -0.05167734995484352,
+                  -0.07428340971816859
+                ],
+                [
+                  -0.048795171082019806,
+                  -0.048795171082019806,
+                  -0.41842716932296753,
+                  -0.06192680448293686,
+                  0.06177738681435585,
+                  -0.012643867172300816,
+                  -0.012643867172300816,
+                  -1.201159119606018,
+                  -1.4585902690887451,
+                  -1.4585902690887451,
+                  3.0256340503692627,
+                  -1.4585319757461548,
+                  -1.4585319757461548,
+                  -0.1443571001291275,
+                  -0.08438649773597717,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.025559788569808006,
+                  0,
+                  -0.025559788569808006,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.4439905881881714,
+                  0,
+                  0,
+                  4.440393924713135,
+                  6.928143501281738,
+                  -1.4439905881881714,
+                  -1.4439905881881714,
+                  -1.0436203479766846,
+                  -1.0436203479766846,
+                  -1.0436203479766846,
+                  -0.08438649773597717,
+                  -0.002115652896463871,
+                  -0.002115652896463871,
+                  0,
+                  -0.025559788569808006,
+                  -0.07005356252193451,
+                  -0.025559788569808006,
+                  -0.057906970381736755,
+                  -0.09284181147813797,
+                  -0.09284181147813797,
+                  -0.09284181147813797,
+                  -0.9751236438751221,
+                  -0.9751236438751221,
+                  -0.9751236438751221,
+                  -0.1084101210515288
+                ],
+                [
+                  -0.0927429273724556,
+                  -0.0927429273724556,
+                  -0.5537862181663513,
+                  -0.07485596835613251,
+                  0.06743767857551575,
+                  -0.052224528044462204,
+                  -0.052224528044462204,
+                  -1.5558269023895264,
+                  -0.07368092983961105,
+                  -0.07368092983961105,
+                  -1.4282385110855103,
+                  -0.05240098014473915,
+                  -0.05240098014473915,
+                  -0.1937449872493744,
+                  -0.12120719254016876,
+                  -0.06075097247958183,
+                  -0.0012811475899070501,
+                  -0.09967587888240814,
+                  -0.02556362934410572,
+                  -0.019698133692145348,
+                  -0.00579287251457572,
+                  -0.00579287251457572,
+                  -0.00579287251457572,
+                  -0.00579287251457572,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.03802850469946861,
+                  -0.051364898681640625,
+                  -0.024753792211413383,
+                  -0.024753792211413383,
+                  -0.03192593902349472,
+                  -0.03192593902349472,
+                  -0.03192593902349472,
+                  -0.07149510830640793,
+                  -0.016475439071655273,
+                  -0.07280487567186356,
+                  -0.017785202711820602,
+                  -0.017785202711820602,
+                  -0.05764002352952957,
+                  -0.031070873141288757,
+                  -0.029832353815436363,
+                  -0.017684370279312134,
+                  -0.017684370279312134,
+                  -0.027752505615353584,
+                  -0.64849454164505,
+                  3.503106117248535,
+                  -0.64849454164505,
+                  -0.64849454164505,
+                  2.4967730045318604,
+                  -1.0237435102462769,
+                  4.1706414222717285,
+                  4.1706414222717285,
+                  -0.5933818221092224,
+                  -0.5933818221092224,
+                  -0.5933818221092224,
+                  -0.09755846858024597,
+                  -0.011877664364874363,
+                  -0.011877664364874363,
+                  -0.004530500154942274,
+                  -0.04762572795152664,
+                  -0.0967458114027977,
+                  -0.04762572795152664,
+                  -0.0885116308927536,
+                  -0.12237294763326645,
+                  -0.12237294763326645,
+                  -0.12237294763326645,
+                  -0.1451735943555832,
+                  -0.1451735943555832,
+                  -0.1451735943555832,
+                  -0.0507477912751106
+                ],
+                [
+                  -0.0936611071228981,
+                  -0.0936611071228981,
+                  -0.48373258113861084,
+                  -0.07622578740119934,
+                  0.03659483417868614,
+                  -0.6693550944328308,
+                  -0.6693550944328308,
+                  1.6324509382247925,
+                  -0.05171643942594528,
+                  -0.05171643942594528,
+                  -1.0979268550872803,
+                  -0.01964593306183815,
+                  -0.01964593306183815,
+                  -0.16169314086437225,
+                  -0.08199702948331833,
+                  -0.008305324241518974,
+                  0,
+                  -0.014230983331799507,
+                  -0.003342446405440569,
+                  -0.0028333866503089666,
+                  -0.3786526918411255,
+                  -0.3786526918411255,
+                  -0.3786526918411255,
+                  -0.3786526918411255,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.050013989210128784,
+                  0,
+                  -0.050013989210128784,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.25880807638168335,
+                  -0.8466383218765259,
+                  -0.25880807638168335,
+                  -0.25880807638168335,
+                  2.240206241607666,
+                  -0.7833297848701477,
+                  -0.5575789213180542,
+                  -0.5575789213180542,
+                  3.6126012802124023,
+                  3.6126012802124023,
+                  3.6126012802124023,
+                  -0.08199702948331833,
+                  -0.014235470443964005,
+                  -0.014235470443964005,
+                  -0.010788190178573132,
+                  -0.050013989210128784,
+                  -0.0872994065284729,
+                  -0.050013989210128784,
+                  -0.06286848336458206,
+                  -0.531599760055542,
+                  -0.531599760055542,
+                  -0.531599760055542,
+                  -0.14677152037620544,
+                  -0.14677152037620544,
+                  -0.14677152037620544,
+                  -0.39968628557917557
+                ],
+                [
+                  -6.294653415679932,
+                  -6.294653415679932,
+                  9.366467475891113,
+                  2.566815137863159,
+                  0.9740632772445679,
+                  -0.7554699182510376,
+                  -0.7554699182510376,
+                  -2.0826172828674316,
+                  -0.6753588318824768,
+                  -0.6753588318824768,
+                  -2.251826286315918,
+                  -0.6618582010269165,
+                  -0.6618582010269165,
+                  0.18902544677257538,
+                  0.6731098294258118,
+                  -0.9648468494415283,
+                  -0.8669461607933044,
+                  -1.0430768728256226,
+                  -0.05961951985955238,
+                  -0.024833690375089645,
+                  -0.38171523809432983,
+                  -0.38171523809432983,
+                  -0.38171523809432983,
+                  -0.38171523809432983,
+                  -1.0183719396591187,
+                  -1.0183719396591187,
+                  -3.494152307510376,
+                  -1.0183719396591187,
+                  -3.494152307510376,
+                  -2.437612533569336,
+                  -0.25212186574935913,
+                  -0.12010891735553741,
+                  -0.12010891735553741,
+                  -0.12010891735553741,
+                  -0.11843294650316238,
+                  -0.11843294650316238,
+                  -0.11843294650316238,
+                  -0.44042032957077026,
+                  0,
+                  -0.44042032957077026,
+                  0,
+                  0,
+                  -0.26352399587631226,
+                  -0.2410449981689453,
+                  -0.23639176785945892,
+                  -0.0682106465101242,
+                  -0.0682106465101242,
+                  -0.23225350677967072,
+                  -0.1952066570520401,
+                  -0.9421952962875366,
+                  -0.1952066570520401,
+                  -0.1952066570520401,
+                  -1.1043624877929688,
+                  -0.22471743822097778,
+                  -0.7419885993003845,
+                  -0.7419885993003845,
+                  -0.1264972984790802,
+                  -0.1264972984790802,
+                  -0.1264972984790802,
+                  1.6060593128204346,
+                  2.451650381088257,
+                  2.451650381088257,
+                  4.8798909187316895,
+                  -0.44042032957077026,
+                  -0.6823106408119202,
+                  -0.44042032957077026,
+                  -0.6200803518295288,
+                  -0.5502851605415344,
+                  -0.5502851605415344,
+                  -0.5502851605415344,
+                  -0.5999463200569153,
+                  -0.5999463200569153,
+                  -0.5999463200569153,
+                  0.16895956397619122
+                ],
+                [
+                  -0.3816722631454468,
+                  -0.3816722631454468,
+                  -1.5811574459075928,
+                  -0.6153931617736816,
+                  -0.3981662690639496,
+                  -0.4537511467933655,
+                  -0.4537511467933655,
+                  -1.2153650522232056,
+                  -0.4179556667804718,
+                  -0.4179556667804718,
+                  -1.2900786399841309,
+                  -0.416744202375412,
+                  -0.416744202375412,
+                  -0.0027048022020608187,
+                  -0.7696089148521423,
+                  -0.7723516225814819,
+                  -0.5047671794891357,
+                  -1.449583888053894,
+                  -0.6511098742485046,
+                  -0.05829523503780365,
+                  -0.22646495699882507,
+                  -0.22646495699882507,
+                  -0.22646495699882507,
+                  -0.22646495699882507,
+                  -0.14280372858047485,
+                  -0.14280372858047485,
+                  -0.30212652683258057,
+                  -0.14280372858047485,
+                  -0.30212652683258057,
+                  -0.13244561851024628,
+                  -1.8910257816314697,
+                  -1.403303861618042,
+                  -0.3478788137435913,
+                  -0.3478788137435913,
+                  -0.6995062232017517,
+                  -0.6995062232017517,
+                  -0.6995062232017517,
+                  -0.2758951783180237,
+                  -1.0419951677322388,
+                  -0.37637877464294434,
+                  -1.1395468711853027,
+                  -1.1395468711853027,
+                  -1.8807034492492676,
+                  -1.831058382987976,
+                  -1.8075839281082153,
+                  -0.32017841935157776,
+                  -0.32017841935157776,
+                  -1.782405972480774,
+                  -0.09934067726135254,
+                  -0.5408239364624023,
+                  -0.09934067726135254,
+                  -0.09934067726135254,
+                  -0.6319876313209534,
+                  -0.11961700767278671,
+                  -0.4402954578399658,
+                  -0.4402954578399658,
+                  -0.06908479332923889,
+                  -0.06908479332923889,
+                  -0.06908479332923889,
+                  -0.20809751749038696,
+                  -0.24042953550815582,
+                  -0.24042953550815582,
+                  -0.4189052879810333,
+                  0.7795298099517822,
+                  11.42259407043457,
+                  0.7795298099517822,
+                  11.319421768188477,
+                  -0.31152769923210144,
+                  -0.31152769923210144,
+                  -0.31152769923210144,
+                  -0.30734410881996155,
+                  -0.30734410881996155,
+                  -0.30734410881996155,
+                  2.1212647372835605
+                ],
+                [
+                  -0.2656499147415161,
+                  -0.2656499147415161,
+                  -0.2656499147415161,
+                  0.001179277547635138,
+                  0.001179277547635138,
+                  -0.9322550296783447,
+                  -0.9322550296783447,
+                  1.6506376266479492,
+                  -0.13950572907924652,
+                  -0.13950572907924652,
+                  -0.5671203136444092,
+                  -0.09568681567907333,
+                  -0.09568681567907333,
+                  -0.03038633055984974,
+                  -0.03038633055984974,
+                  -0.09856939315795898,
+                  -0.03038633055984974,
+                  -0.1412663608789444,
+                  -0.030946388840675354,
+                  -0.01908920705318451,
+                  -0.5236356854438782,
+                  -0.5236356854438782,
+                  -0.5236356854438782,
+                  -0.5236356854438782,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.04778749868273735,
+                  -0.06089315563440323,
+                  -0.027898266911506653,
+                  -0.027898266911506653,
+                  -0.033751536160707474,
+                  -0.033751536160707474,
+                  -0.033751536160707474,
+                  -0.024096287786960602,
+                  -0.024096287786960602,
+                  -0.03181431442499161,
+                  -0.03181431442499161,
+                  -0.03181431442499161,
+                  -0.06276052445173264,
+                  -0.04270819574594498,
+                  -0.04122140258550644,
+                  -0.019716255366802216,
+                  -0.019716255366802216,
+                  -0.038945991545915604,
+                  -0.4921821653842926,
+                  -0.5084509253501892,
+                  -0.4921821653842926,
+                  -0.4921821653842926,
+                  -0.4931755065917969,
+                  -0.0035784963984042406,
+                  -0.007919473573565483,
+                  -0.007919473573565483,
+                  -0.47018909454345703,
+                  -0.47018909454345703,
+                  -0.47018909454345703,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.030881887301802635,
+                  0,
+                  -0.030658071860671043,
+                  4.200775146484375,
+                  4.200775146484375,
+                  4.200775146484375,
+                  -0.18813550472259521,
+                  -0.18813550472259521,
+                  -0.18813550472259521,
+                  0.03124144711955535
+                ],
+                [
+                  -0.2888765335083008,
+                  -0.2888765335083008,
+                  -0.3082510530948639,
+                  -0.002462939824908972,
+                  -0.002462939824908972,
+                  -0.2901265025138855,
+                  -0.2901265025138855,
+                  -0.49432286620140076,
+                  -0.936366856098175,
+                  -0.936366856098175,
+                  1.5286990404129028,
+                  -0.9019565582275391,
+                  -0.9019565582275391,
+                  -0.02217450551688671,
+                  -0.02217450551688671,
+                  -0.07223351299762726,
+                  -0.02217450551688671,
+                  -0.10799755156040192,
+                  -0.02874431386590004,
+                  -0.013957852497696877,
+                  -0.08221180737018585,
+                  -0.08221180737018585,
+                  -0.08221180737018585,
+                  -0.08221180737018585,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.051544833928346634,
+                  -0.06394338607788086,
+                  -0.029709788039326668,
+                  -0.029709788039326668,
+                  -0.03608883172273636,
+                  -0.03608883172273636,
+                  -0.03608883172273636,
+                  -0.02568100206553936,
+                  -0.02568100206553936,
+                  -0.034111253917217255,
+                  -0.034111253917217255,
+                  -0.034111253917217255,
+                  -0.06661737710237503,
+                  -0.04605503007769585,
+                  -0.044468581676483154,
+                  -0.021041210740804672,
+                  -0.021041210740804672,
+                  -0.04207655042409897,
+                  -0.04523279890418053,
+                  -0.07133828103542328,
+                  -0.04523279890418053,
+                  -0.04523279890418053,
+                  -0.8130009770393372,
+                  -0.7881066799163818,
+                  -0.012441773898899555,
+                  -0.012441773898899555,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.029648233205080032,
+                  0,
+                  -0.02944997511804104,
+                  0,
+                  0,
+                  0,
+                  4.243563652038574,
+                  4.243563652038574,
+                  4.243563652038574,
+                  0.029445097177304
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "agnipath defence policy"
+      ],
+      [
+        "en",
+        "details of agnipath defence policy"
+      ],
+      [
+        "en",
+        "atal pension yojna"
+      ],
+      [
+        "en",
+        "details of atal pension yojna"
+      ],
+      [
+        "en",
+        "ayushman sahakar scheme"
+      ],
+      [
+        "en",
+        "details of ayushman sahakar scheme"
+      ],
+      [
+        "en",
+        "bihar scholarship scheme"
+      ],
+      [
+        "en",
+        "details of bihar scholarship scheme"
+      ],
+      [
+        "en",
+        "how to create an account"
+      ],
+      [
+        "en",
+        "create account"
+      ],
+      [
+        "en",
+        "account registration"
+      ],
+      [
+        "en",
+        "create new account"
+      ],
+      [
+        "en",
+        "deen dayal jan awas yojna"
+      ],
+      [
+        "en",
+        "details of deen dayal jan awas yojna"
+      ],
+      [
+        "en",
+        "difference between state and center policy"
+      ],
+      [
+        "en",
+        "difference between center and state policy"
+      ],
+      [
+        "en",
+        "state policy vs center policy"
+      ],
+      [
+        "en",
+        "center policy vs state policy"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye take care"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "hi whats up"
+      ],
+      [
+        "en",
+        "hii"
+      ],
+      [
+        "en",
+        "jharkhand kisan karz maafi yojna"
+      ],
+      [
+        "en",
+        "details of jharkhand kisan karz maafi yojna"
+      ],
+      [
+        "en",
+        "pm aasha scheme"
+      ],
+      [
+        "en",
+        "details of pm aasha scheme"
+      ],
+      [
+        "en",
+        "pm kisan samman nidhi"
+      ],
+      [
+        "en",
+        "details of pm kisan samman nidhi"
+      ],
+      [
+        "en",
+        "pm poshan shakti nirman yojna"
+      ],
+      [
+        "en",
+        "details of pm poshan shakti nirman yojna"
+      ],
+      [
+        "en",
+        "how to get policy details"
+      ],
+      [
+        "en",
+        "details of policies"
+      ],
+      [
+        "en",
+        "information about policies"
+      ],
+      [
+        "en",
+        "policy link"
+      ],
+      [
+        "en",
+        "How can I apply for this"
+      ],
+      [
+        "en",
+        "apply"
+      ],
+      [
+        "en",
+        "register"
+      ],
+      [
+        "en",
+        "How can I register for this"
+      ],
+      [
+        "en",
+        "rajasthan free tablet yojna"
+      ],
+      [
+        "en",
+        "details of rajasthan free tablet yojna"
+      ],
+      [
+        "en",
+        "uttar pradesh rojgar scheme"
+      ],
+      [
+        "en",
+        "details of uttar pradesh rojgar scheme"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "agnipathdefencepolicy": [
+          {
+            "answer": "Agneepath scheme is a central government scheme launched in 2022. Under the scheme, Indian youth can join the Indian Army for four years and will be able to serve the country. This is a pan-India scheme so any Indian youth can apply for this job and join the Indian Army."
+          }
+        ],
+        "atal pension yojna": [
+          {
+            "answer": "Atal Pension Yojana (APY), a pension scheme for citizens of India is focused on the unorganized sector workers. Under the APY, guaranteed minimum pension of Rs. 1,000/- or 2,000/- or 3,000/- or 4,000 or 5,000/- per month will be given at the age of 60 years depending on the contributions by the subscribers."
+          }
+        ],
+        "ayushman sahakar scheme": [
+          {
+            "answer": "AYUSHMAN SAHAKAR, a unique scheme to assist cooperatives play an important role in creation of healthcare infrastructure in the country has been formulated by the apex autonomous development finance institution under the Ministry of Agriculture and Farmers Welfare, the National Cooperative Development Corporation (NCDC)"
+          }
+        ],
+        "bihar scholarship scheme": [
+          {
+            "answer": "The Bihar government provides several scholarships to students from economically and socially weaker sections, such as Scheduled Castes (SC), Scheduled Tribes (ST), Other Backward Classes (OBC), Minority and General categories. The scheme is aimed at providing financial assistance to students for pursuing their education in various schools, colleges, universities, technical and professional institutions in the state of Bihar"
+          }
+        ],
+        "create_account": [
+          {
+            "answer": "click on user login button on homepage and then click on create new to create a new account"
+          }
+        ],
+        "deen dayal jan awas yojna": [
+          {
+            "answer": "The Haryana government has implemented the Deen Dayal Jan Awas Yojana Haryana to provide housing facilities to the states  poor and economically disadvantaged areas. No taxpayers are allowed to apply. Citizens who do not own their own homes are eligible to apply under this program. no government employees are allowed to apply"
+          }
+        ],
+        "difference": [
+          {
+            "answer": "state policies are implemented by state government whereas center policies are implemented by central government. only people living in a particular state can get benefit of from state policies whereas everyone who is eligible can get benefit from central policies"
+          }
+        ],
+        "greetings.bye": [
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "bye bye"
+          },
+          {
+            "answer": "have a great day"
+          }
+        ],
+        "hello": [
+          {
+            "answer": "hello, how can i help you?"
+          },
+          {
+            "answer": "hello, how can i assist you?"
+          },
+          {
+            "answer": "hi there, i am here to assist you"
+          }
+        ],
+        "jharkhand kisan karz maafi yojna": [
+          {
+            "answer": "Jharkhand Krishi Rin Mafi Yojana, launched by the Jharkhand state government on 1 February 2021 is an agriculture loan waiver scheme for the farmers of Jharkhand."
+          }
+        ],
+        "pm aasha scheme": [
+          {
+            "answer": "Pradhan Mantri Annadata Aay SanraksHan Abhiyan (PM AASHA) is a scheme that aims at ensuring fair price for farmers and their produce."
+          }
+        ],
+        "pm kisan samman nidhi": [
+          {
+            "answer": "PM Kisan is a Central Sector scheme with 100% funding from Government of India. The fund will be directly transferred to the bank accounts of the beneficiaries."
+          }
+        ],
+        "pmposhanshaktinirmanyojna": [
+          {
+            "answer": "The objectives of the Scheme are to address two of the pressing problems for majority of children in India, viz. hunger and education by: Improving the nutritional status of eligible children in Government and Government aided schools."
+          }
+        ],
+        "policy.details": [
+          {
+            "answer": "click on the visit icon on the results page to get details about that policy"
+          },
+          {
+            "answer": "policy information can be obtained by clicking on the visit icon on the page displaying policy results"
+          }
+        ],
+        "policy.ques": [
+          {
+            "answer": "There is a link when you view the policy "
+          },
+          {
+            "answer": "you can register from official government website"
+          },
+          {
+            "answer": "ou can apply from official government website"
+          },
+          {
+            "answer": "tap on view button then go to link of website"
+          }
+        ],
+        "rajasthan free tablet yojna": [
+          {
+            "answer": "Under the Rajasthan Free Tablet Plan 2023, brilliant tablet board classes will be given to the understudies of class eighth, tenth, twelfth based on legitimacy to the initial 9300 understudies of each class."
+          }
+        ],
+        "uttar pradesh rojgar scheme": [
+          {
+            "answer": "UP Rojgar Mela has been organized by the Government of Uttar Pradesh to give jobs to unemployed youth. For this scheme, unemployed youth of the state can participate in it and get employment."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

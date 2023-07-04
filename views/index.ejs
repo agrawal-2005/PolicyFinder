@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/styles/navbar.css">
+        <link rel = "stylesheet" href="../static/styles/index.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <script>
+            function clicked(){
+                window.location.assign("support");
+            }
+        </script>
+        <title>Grievance Portal</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="about_us">About Us</a></li>
+                    <li><a href="support">Support</a></li>
+                    <li><a href="userLogin">User Login</a></li>
+                    <li><a href="adminLogin">Admin Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col1">
+            <H1>All government policies you need <br> In One Place.</H1>
+            <p>Use this platform to filter out the perfect government policy/scheme to fit your needs.</p>
+            <button type="button" class="learnMore" onclick="clicked()">Learn More</button>
+            </div>
+            <div class="col2">
+                <h4>GET STARTED</h4>
+                <p>Follow the following steps to get started with grievance portal.</p>
+                <div class="content">
+                    <img src="../static/images/loginInst.png">
+                    <h6>Step 1</h6>
+                    <h5>Create a new account.</h5>
+                    <p>Create a new account by clicking on User login on top right.<br>If already have an account then login.</p>
+                    <img src="../static/images/PostInst.png">
+                    <h6>Step 2</h6>
+                    <h5>Specify your requirements</h5>
+                    <p>Fill in your requirements on the form on your dashboard <br> and we will filter the best policies for you.</p>
+                    <img src="../static/images/trackInst.png">
+                    <h6>Step 3</h6>
+                    <h5>Click on the policy of interest.</h5>
+                    <p>Click on the policy that fits your need to read about it and enroll in it.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

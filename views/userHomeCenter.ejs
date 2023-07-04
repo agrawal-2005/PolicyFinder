@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\static\styles\navbar.css">
+        <link rel = "stylesheet" href="..\static/styles/userHome.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <title>Policy Finder</title>
+        <script src="../static/scripts/home.js" defer></script>
+        <script>
+             
+
+                function closePopup(){
+                    var popup = document.getElementsByClassName("popup")[0];
+                    popup.classList.remove('active');
+                }
+        </script>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="..\static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <!-- <li><a href="search">Search</a></li> -->
+                    <li><a href="about_us?token=<%= token %>">About Us</a></li>
+                    <li><a href="support?token=<%= token %>">Support</a></li>
+                    <li><a href="notification?token=<%= token %>">Notifications</a></li>
+                    <li><a href="profile?token=<%= token %>">Profile</a></li>
+                    <li><a href="/index">Logout</a></li>
+
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="outer-col1">
+           
+                <a href="userHomeCenter?token=<%= token %>"><div class="box2">Central Policies</div></a>
+                <a href="userHomeState?token=<%= token %>"><div class="box3">State Policies</div></a>
+            </div>
+            <div class="container">
+                <!-- <button id="chatbot-button">Help</button> -->
+  
+                    <button id="chatbot-button">Help</button>       
+                <div id="chat" class="chatbot_window">
+                    <div class="blocker2" id="cancel"></div>
+                    <div id="messages"></div>
+                    <form id="message-form">
+                      <input type="text" id="message-input" placeholder="Type your message...">
+                      <button type="submit">Send</button>
+                    </form>
+                  </div>
+                  <script src="../static/scripts/script.js"></script>
+                 </div>
+        
+
+            </div>
+            <div id="chat" class="chatbot_window">
+                <div class="blocker2" id="cancel"></div>
+                <div id="messages"></div>
+                <form id="message-form">
+                  <input type="text" id="message-input" placeholder="Type your message...">
+                  <button type="submit">Send</button>
+                  <!-- <button id="cancel">Chat finish</button> -->
+
+                </form>
+              </div>
+            
+            <div class="popup">
+                <div class="blocker" onclick="closePopup()"></div>
+                <div class="popup_contents">
+                    <H1 id="name">Policy Name</H1>
+                    <p id="desc">Policy Description</p>
+                    <a id="link"><button type="button" class="learnMore" onclick="clicked()">Visit</button></a>
+                </div>
+            </div>
+            <div class="col3">
+                <h4>RESULTS</h4>
+                <div class="content">
+                    <div class="toprow">
+                        <div class="space"></div>
+                        <p>Policy Name</p>
+                        <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Region</p>
+                        <div class="bigspace2"></div>
+                        <p>Policy Category</p>
+                        <div class="bigspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Visit</p>
+                        
+                    </div>
+                    
+                    <% 
+                        for(var i = 0; i<result2.length; i++){
+
+                         %>
+                            <div class="data" id="<%= i %>">
+                                <div class="space2"></div>
+                                <p id="PolicyName"><%= result2[i].policy_name %></p>
+                                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="space"></div>
+                                <p>Center</p>
+                                <div class="bigspace2"></div>
+                                <p id="policyCategory"><%= result2[i].policy_category %></p>
+                                <div class="bigspace"></div><div class="space"></div>
+                                <a onclick="showPopup(this.parentNode)"><img src="../static/images/visit.png"></a>
+                                <div class="space"></div>
+                            </div>                             
+                     
+                            <%   } %> 
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

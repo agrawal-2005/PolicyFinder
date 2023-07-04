@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\static\styles\navbar.css">
+        <link rel = "stylesheet" href="..\static/styles/userHome.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <title>Grievance Portal</title>
+        <script src="../static/scripts/admin.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="..\static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="about_us?token=<%= token %>">About Us</a></li>
+                    <li><a href="support?token=<%= token %>">Support</a></li>
+                    <li><a href="/index">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="outer-col1">
+                <!-- <div class="box1">
+                    <H1>Solutions To All Your Grievances <br> In One Place.</H1>
+                    <p>We will take your grievance to the desk of concerned officer and see it resolved.</p>
+                    <button type="button" class="learnMore">Learn More</button>
+                </div> -->
+                <a href="adminView?token=<%= token %>"><div class="box2">View all policies</div></a>
+                <a href="adminDel?token=<%= token %>"><div class="box3">Delete policy</div></a>
+                <a href="adminHome?token=<%= token %>"><div class="box4">Add a new policy</div></a>
+            </div>
+            <div class="container">
+                <!-- <div class="title1">Enter Details</div>
+                <form action="#">
+                    <div class="input-box">
+                        <div class="col1">
+                            <div class="space2"><br><br><br></div>
+                            <h4>Income</h4>
+                            <input type="text" name="income" placeholder="Enter your yearly income" required>
+                            <div class="space"></div>
+                            <h4>Occupation</h4>
+                            <input type="text" name="occupation" placeholder="Enter your occupation" required>
+                        </div>
+                        <div class="col2">
+                            <h4>Caste</h4>
+                            <input type="text" name="Caste" placeholder="Enter your caste" required>
+                            <div class="innerRow">
+                                <div class="innercol1">
+                                    <h4>Age</h4>
+                                    <input type="number" name="ageNumber" placeholder="Enter Your Age" required>
+                                </div>
+                                <div class="innercol2">
+                                    <h4>Gender</h4>
+                                        <select name="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                </div>
+                            </div>  
+                            <div class="space"></div>
+                            <h4>Policy Category</h4>
+                            <input type="number" name="mobile" placeholder="Enter Policy Category" required>
+                            <div class="space"></div>
+                            <input type="submit" name="register" id="register" value="Submit">
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+            <div class="col3">
+                <h4>RESULTS</h4>
+                <div class="content">
+                    <div class="toprow">
+                        <div class="space"></div>
+                        <p>Policy ID</p>
+                        <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Region</p>
+                        <div class="bigspace2"></div>
+                        <p>Policy Name</p>
+                        <div class="bigspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <p>Policy Category</p>
+                        
+                    </div>
+                    <%= result[0].policy_name %>
+                    <div class="title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCentral Policies</div>
+                        <br>
+                    
+                    <% for(var i = 0; i<result.length; i++){ %>
+                            <div class="data">
+                                <div class="space2"></div>
+                                <p id="policy_id"><%= result[i]._id %></p>
+                                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="space"></div>
+                                <p>Center</p>
+                                <div class="bigspace2"></div>
+                                <p id="policy_name"><%= result[i].policy_name%></p>
+                                <div class="bigspace"></div><div class="space"></div>
+                                <p id="policy_category"><%= result[i].policy_category %></p>
+                                <div class="space"></div>
+                            </div>                             
+                        <% } %> 
+
+                        <div class="title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspState Policies</div>
+                        <br>
+                        <% for(var i = 0; i<result2.length; i++){ %>
+                            <div class="data">
+                                <div class="space2"></div>
+                                <p id="policy_id"><%= result2[i]._id %></p>
+                                <div class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="space"></div>
+                                <p id="State"><%= result2[i].state %></p>
+                                <div class="bigspace2"></div>
+                                <p id="policy_name"><%= result2[i].policy_name%></p>
+                                <div class="bigspace"></div><div class="space"></div>
+                                <p id="policy_category"><%= result2[i].policy_category %></p>
+                                <div class="space"></div>
+                            </div>                             
+                        <% } %> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

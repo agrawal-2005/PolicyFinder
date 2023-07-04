@@ -1,0 +1,15 @@
+{
+    "questions": [
+        "hi",
+        "hello",
+        "hey",
+        "hi whats up",
+        "hii"
+    ],
+    "answers": [
+        "hello, how can i help you?",
+        "hello, how can i assist you?",
+        "hi there, i am here to assist you"
+
+    ]
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="..\static\styles\navbar.css">
+        <link rel = "stylesheet" href="..\static/styles/admin.css">
+        <script src="../static/scripts/navbar.js" defer></script>
+        <title>Grievance Portal</title>
+        <script src="../static/scripts/admin.js" defer></script>
+    </head>
+
+    <body>
+        <%
+    const states = [
+    'Andhra Pradesh',
+    'Arunachal Pradesh',
+    'Assam',
+    'Bihar',
+    'Chhattisgarh',
+    'Goa',
+    'Gujarat',
+    'Haryana',
+    'Himachal Pradesh',
+    'Jharkhand',
+    'Karnataka',
+    'Kerala',
+    'Madhya Pradesh',
+    'Maharashtra',
+    'Manipur',
+    'Meghalaya',
+    'Mizoram',
+    'Nagaland',
+    'Odisha',
+    'Punjab',
+    'Rajasthan',
+    'Sikkim',
+    'Tamil Nadu',
+    'Telangana',
+    'Tripura',
+    'Uttar Pradesh',
+    'Uttarakhand',
+    'West Bengal',
+    'Andaman and Nicobar Islands',
+    'Chandigarh',
+    'Dadra and Nagar Haveli and Daman and Diu',
+    'Delhi',
+    'Ladakh',
+    'Lakshadweep',
+    'Puducherry'
+  ];
+%>  
+<% const occupation = ["none","farmer","student","teacher","lawyer","self-employed","government_official"];
+const categories = ["finance", "education", "housing", "health", "hygien", "agriculture"];
+
+          %>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="..\static/images/Logo.png">
+                <p1>Policy &nbsp</p1> <p2>Finder</p2>
+            </div>
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="about_us?token=<%= token %>">About Us</a></li>
+                    <li><a href="support?token=<%= token %>">Support</a></li>
+                    <li><a href="/index">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="outer-col1">
+                <div class="top">
+                    <div class="box1">
+                        <H1>Instructions for adding policy:</H1>
+                        <p>In form while giving input for age/income/qualification do it in LOWER_BOUND + '-' + UPPER_BOUND <br></p>
+                        <p>In form while giving input for caste use lowercase letter and if applicable for more than 1 caste separate them with forward slashes. eq.(sc/st/obc/gen)</p>
+                        <p>The qualification encoding lies from 1 to 16</p>
+                        <br><br>
+                    </div>
+                </div>
+                
+                <div class="bottom">
+                    <a href="adminView?token=<%= token %>"><div class="box2">View all policies</div></a>
+                    <a href="adminDel?token=<%= token %>"><div class="box3">Delete policy</div></a>
+                    <a href="adminHome?token=<%= token %>"><div class="box4">Add a new policy</div></a>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="title1">Enter Details</div>
+                <form action="policy_add" method="post">
+                    <div class="input-box">
+                        <div class="col1">
+                            <div class="space2"><br><br><br></div>
+                            <h4>Policy Name</h4>
+                            <input type="text" name="name" placeholder="Enter policy name" required>
+                            <div class="space"></div>
+                            <h4>State</h4>
+                            <input type="hidden" name="token" value="<%= token %>">
+
+                            <select name="state">
+                                <% for(var i = 0; i<states.length; i++){ %>
+                                  <option value="<%= states[i] %>"><%= states[i] %></option>
+                                <% } %>
+                              </select>
+                            <div class="space"></div>
+                            <h4>Income</h4>
+                            <input type="text" name="income" placeholder="Enter yearly income" required>
+                            <div class="space"></div>
+                            <h4>Occupation</h4>
+                            <select name="occupation">
+                                <% for(var i = 0; i<6; i++){ %>
+                                    <option value="<%= occupation[i] %>"><%= occupation[i] %></option>
+                                <% } %>
+                              </select>
+                            <div class="space"></div>
+                            <h4>Details</h4>
+                            <input type="text" name="details" placeholder="Enter policy details" required>
+                        </div>
+                        <div class="col2">
+                            <h4>Region</h4>
+                            <select name="Region">
+                                <option value="Center">Center</option>
+                                <option value="State">State</option>
+                            </select>
+                            <div class="space"></div>
+                            <h4>Caste</h4>
+                            <input type="text" name="caste" placeholder="Enter caste" required>
+                            <div class="innerRow">
+                                <div class="innercol1">
+                                    <h4>Age</h4>
+                                    <input type="text" name="ageNumber" placeholder="Enter Your Age" required>
+                                </div>
+                                <div class="innercol2">
+                                    <h4>Gender</h4>
+                                        <select name="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                </div>
+                            </div>  
+                            <div class="space"></div>
+                            <h4>Policy Category</h4>
+                            <select name="policy_category">
+                                <% for(var i = 0; i<6; i++){ %>
+                                    <option value="<%= categories[i] %>"><%= categories[i] %></option>
+                                <% } %>
+                            </select>
+                            <div class="space"></div>
+                            <h4>Qualification</h4>
+                            <input type="text" name="qualification" placeholder="Enter policy qualification" required>
+                            <div class="space"></div>
+                            <h4>Link</h4>
+                            <input type="text" name="link" placeholder="Enter policy link" required>
+                            <div class="space"></div>
+                            <input type="submit" name="register" id="register" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
